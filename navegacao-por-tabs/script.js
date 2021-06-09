@@ -33,23 +33,23 @@ function initAccordion(){
 }
 initAccordion();
 function initScroll(){
-const scrollSuave = document.querySelectorAll('.js-menu a[href^="#"]');
-function scrollToSection(event){
-    event.preventDefault();
-    const hrf = event.currentTarget.getAttribute('href');
-    const section = document.querySelector(hrf)
-    const topo = section.offsetTop;
-    /* forma alternativa
-    window.scrollTo({
-        top:topo,
-        behavior: 'smooth'
-    })*/
-    section.scrollIntoView({
-        behavior: 'smooth',
-        block:'start',
-    });
-}
-scrollSuave.forEach((link)=>{
-    link.addEventListener('click',scrollToSection)
+    const scrollSuave = document.querySelectorAll('.js-menu a[href^="#"]');
+    function scrollToSection(event){
+        event.preventDefault();
+        const hrf = event.currentTarget.getAttribute('href');
+        const section = document.querySelector(hrf)
+        const topo = section.offsetTop;
+        /* forma alternativa
+        window.scrollTo({
+            top:topo,
+            behavior: 'smooth'
+        })*/
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block:'start',
+        });
+    }
+    scrollSuave.forEach((link)=>{
+        link.addEventListener('click',scrollToSection)
 })}
 initScroll();
