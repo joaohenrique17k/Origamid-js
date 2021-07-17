@@ -94,3 +94,8 @@
  
  const headerss =  fetch('https://viacep.com.br/ws/11707170/json/').then(r => r.headers.forEach(console.log))
 
+//types
+// basic: feito na mesma origem
+// cors: feito em url body pode estar disponível
+// error: erro de conexão
+// opaque: no-cors, não permite acesso de outros sites
