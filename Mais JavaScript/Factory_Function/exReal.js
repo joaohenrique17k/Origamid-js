@@ -4,7 +4,7 @@ function $$(selectedElements){
         elements.forEach(element => {
             element.style.display = 'none';
         });
-        return $$(selectedElements); // Ou podemos retornar this(é a mesma coisa).
+        return $$(selectedElements); // Ou podemos retornar this(é a mesma coisa)
 
     }
     function show(){
