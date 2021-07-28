@@ -135,6 +135,7 @@
         O método replace() é o mais interessante por permitir a utilização de funções de callback para 
         cada match que ele der com a Regexp.
 */
+ 
 
     //tags.replace(/(?<=<\/?)\w+/g, 'div');
     // <div>
